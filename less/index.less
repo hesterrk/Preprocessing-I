@@ -59,6 +59,8 @@ html, body {
 }
 
 @fontStyle: Helvetica; 
+@headertwoSize: 1.1rem;
+@paragraphFontSize: 0.9rem;
 
 .wholecontainer {
 	width: 100%;
@@ -72,7 +74,7 @@ a {
 .hester {
 	width: 30%;
 	border: 1px black;
-	border-radius:100px;
+	border-radius:150px;
 	padding-bottom: 10px;
 	padding-left: 10px;
 }
@@ -91,15 +93,14 @@ h1 {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-	border: 1px red solid;
-	background: white;
+
+	
 	
 
 }
 
 .navigation {
 	display: flex;
-	border: 1px blue solid;
 	width: 50%;
 	justify-content: space-around;
 	padding-top: 20px;
@@ -117,20 +118,18 @@ h1 {
 }
 
 header {
-	border: 1px blue solid;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
 p {
 	font-family: @fontStyle;
-	font-size: 0.8rem;
+	font-size: @paragraphFontSize;
 }
 
 .colorbackground p {
 	display: flex;
 	justify-content: flex-start;
-	border: 1px green solid;
 	padding-left: 10px;
 	padding-right: 10px;
 	width: 100%;
@@ -145,24 +144,42 @@ p {
 }
 
 #button1 {
-	width: 17.9%;
-	border-radius: 40px;
-	padding-right: 0px;
+	width: 18%;
+	border-radius: 70px;
+	padding-right: 10px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 25px;
+	padding-left:22px;
 	border: 2px black solid;
 	text-align: center;
 
 }
 
 .justhese {
-	background: white;
+
 	display: flex;
 	flex-direction: column;
 	align-content: space-around;
-	border: 1px red solid;
 	flex-wrap: wrap;
 	width: 70%;
+
+}
+
+h2 {
+	font-size: @headertwoSize;
+	padding-left: 20px;
+	
+}
+
+ul {
+	font-size: @paragraphFontSize;
+	list-style-type: circle;
+	padding-left: 18px;
+}
+
+.listclass {
+	padding-left: 20px;
+	
+	
 
 }
