@@ -176,6 +176,12 @@ header .navigation {
   font-family: Helvetica;
   font-size: 0.8rem;
 }
+@media (max-width: 500px) {
+  header .navigation {
+    display: flex;
+    width: 100%;
+  }
+}
 header h1 {
   font-size: 1.8rem;
   font-family: Helvetica;
@@ -184,7 +190,7 @@ header h1 {
   padding-top: 10px;
   padding-right: 10px;
 }
-p {
+header p {
   font-family: Helvetica;
   font-size: 0.9rem;
 }
@@ -260,6 +266,7 @@ ul li {
   border-bottom: 2px black dashed;
   padding-bottom: 20px;
   width: 50%;
+  font-family: Helvetica;
 }
 .secondarycontent-container .workhistory {
   padding-right: 10px;
@@ -268,7 +275,6 @@ ul li {
   padding-top: 0px;
   display: inline-block;
   width: 100%;
-  border: 5px red solid;
 }
 @media (max-width: 500px) {
   .bottombottom {

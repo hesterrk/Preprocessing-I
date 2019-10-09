@@ -125,6 +125,14 @@ header {
 		padding-top: 20px;
 		font-family: @fontStyle;
 		font-size: 0.8rem;
+
+		@media (max-width:500px) {
+			display: flex;
+			width: 100%;
+			
+		
+		
+	}
 	
 		
 	}
@@ -138,13 +146,15 @@ header {
 		padding-top: 10px;
 		padding-right: 10px;
 	}
-}
+
+
 
 p {
 	font-family: @fontStyle;
 	font-size: @paragraphFontSize;
 }
 
+}
 
 
 .imageandpara {
@@ -158,6 +168,9 @@ p {
 		padding-bottom: 10px;
 		padding-left: 10px;
 		padding-right: 10px;
+		
+
+
 	}
 
 	.justhese {
@@ -186,14 +199,16 @@ p {
 
 		@media (max-width:500px) {
 			width: 30%;
-			text-align:center;
-		
-		
+			text-align:center; 
+		}
 	}
+
 		
+		
+
+
 	
-	}
-	
+
 }
 
 
@@ -240,6 +255,7 @@ ul {
 		border-bottom: 2px black dashed;
 		padding-bottom: 20px;
 		width: 50%;
+		font-family: @fontStyle;
 		
 		
 		
@@ -265,13 +281,14 @@ ul {
 	padding-top: 0px;
 	display: inline-block;
 	width: 100%;
-	border: 5px red solid;
-	
+
+
 
 	@media (max-width:500px) {
 		display: flex;
 		flex-direction: column;
 		padding-bottom: 0px;
+		
 
 		
 	}
@@ -285,6 +302,7 @@ ul {
 	height: 20px;
 	padding-bottom: 5px;
 	font-family: @fontStyle
+
 	
 	
 
@@ -301,6 +319,7 @@ ul {
 	@media (max-width:500px) {
 		
 		text-align: center;
+		
 	    
 	
 }
