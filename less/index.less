@@ -61,6 +61,7 @@ html, body {
 @fontStyle: Helvetica; 
 @headertwoSize: 1.1rem;
 @paragraphFontSize: 0.9rem;
+@blueBackground: darkcyan;
 
 .wholecontainer {
 	width: 100%;
@@ -156,7 +157,7 @@ p {
 	text-align: center;
 	display: flex;
 	color: white;
-	background: darkcyan;
+	background: @blueBackground;
 	height: 45px;
 	align-items: center;
 	
@@ -201,7 +202,7 @@ ul {
 }
 
 li {
-	background: lightgrey;
+	background: @blueBackground;
 	padding-bottom: 5px;
 	padding-top: 5px;
 	width: 50%;
