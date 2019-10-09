@@ -221,6 +221,7 @@ h2 {
   font-family: Helvetica;
   text-decoration: underline;
   padding-bottom: 5px;
+  padding-top: 10px;
 }
 ul {
   font-size: 0.9rem;
@@ -245,4 +246,7 @@ li {
 }
 .workhistory {
   padding-right: 10px;
+}
+.secondarycontent-container {
+  display: flex;
 }
