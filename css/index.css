@@ -219,6 +219,8 @@ h2 {
   font-size: 1.1rem;
   padding-left: 20px;
   font-family: Helvetica;
+  text-decoration: underline;
+  padding-bottom: 5px;
 }
 ul {
   font-size: 0.9rem;
