@@ -63,6 +63,17 @@ html, body {
 @paragraphFontSize: 0.9rem;
 @blueBackground: darkcyan;
 
+.someMixin {
+	background-color:@blueBackground;
+	
+
+}
+
+.anotherMixin {
+	color: white;
+}
+
+
 .wholecontainer {
 	width: 100%;
 }
@@ -71,6 +82,7 @@ a {
 	text-decoration: none;
 	color: black;
 	font-family: @fontStyle; 
+	.someMixin();
 }
 
 
@@ -197,12 +209,14 @@ ul {
 	list-style-type: circle;
 	padding-left: 18px;
 	font-family: @fontStyle;
+	
 
 	li {
 		background: @blueBackground;
 		padding-bottom: 5px;
 		padding-top: 5px;
 		width: 100%;
+		
 		
 	}
 }
@@ -279,5 +293,9 @@ footer {
 	display: flex;
 	justify-content: center;
 	background: @blueBackground;
+	.anotherMixin();
+
+
+	
 
 }

@@ -134,6 +134,12 @@ html,
 body {
   height: 100%;
 }
+.someMixin {
+  background-color: darkcyan;
+}
+.anotherMixin {
+  color: white;
+}
 .wholecontainer {
   width: 100%;
 }
@@ -141,6 +147,7 @@ a {
   text-decoration: none;
   color: black;
   font-family: Helvetica;
+  background-color: darkcyan;
 }
 .colorbackground {
   background: lightblue;
@@ -279,4 +286,5 @@ footer {
   display: flex;
   justify-content: center;
   background: darkcyan;
+  color: white;
 }
