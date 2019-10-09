@@ -228,8 +228,11 @@ ul {
   padding-left: 18px;
   font-family: Helvetica;
 }
-.listclass {
+.listclass,
+.workhistory {
   padding-left: 20px;
+  border: 1px red solid;
+  width: 50%;
 }
 .secondarycontent-container {
   padding-bottom: 500px;
@@ -238,8 +241,8 @@ li {
   background: darkcyan;
   padding-bottom: 5px;
   padding-top: 5px;
-  width: 50%;
+  width: 100%;
 }
-.listclass li {
-  width: 41.5%;
+.workhistory {
+  padding-right: 10px;
 }
