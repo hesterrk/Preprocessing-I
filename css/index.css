@@ -155,6 +155,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   border: 1px red solid;
+  background: white;
 }
 .navigation {
   display: flex;
@@ -162,4 +163,12 @@ h1 {
   width: 50%;
   justify-content: space-around;
   padding-top: 20px;
+}
+.colorbackground {
+  background: lightblue;
+}
+header {
+  border: 1px blue solid;
+  padding-left: 20px;
+  padding-right: 20px;
 }
