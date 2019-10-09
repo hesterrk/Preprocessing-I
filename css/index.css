@@ -142,14 +142,6 @@ a {
   color: black;
   font-family: Helvetica;
 }
-.hester {
-  width: 30%;
-  border: 1px black;
-  border-radius: 150px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .flex {
   width: 100%;
   display: flex;
@@ -193,7 +185,22 @@ p {
   display: flex;
   align-items: center;
 }
-#button1 {
+.imageandpara .hester {
+  width: 30%;
+  border: 1px black;
+  border-radius: 150px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.imageandpara .justhese {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
+}
+.imageandpara #button1 {
   width: 10%;
   border-radius: 40px;
   padding-right: 10px;
@@ -207,13 +214,6 @@ p {
   background: darkcyan;
   height: 45px;
   align-items: center;
-}
-.justhese {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  flex-wrap: wrap;
-  width: 70%;
 }
 h2 {
   font-size: 1.1rem;
@@ -229,6 +229,12 @@ ul {
   padding-left: 18px;
   font-family: Helvetica;
 }
+ul li {
+  background: darkcyan;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+}
 .listclass,
 .workhistory {
   padding-left: 20px;
@@ -240,19 +246,18 @@ ul {
   padding-bottom: 20px;
   display: flex;
 }
-li {
-  background: darkcyan;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  width: 100%;
-}
 .workhistory {
   padding-right: 10px;
 }
 .ptag {
   padding-left: 20px;
 }
-.belowandcentre {
+.bottombottom {
+  padding-top: 0px;
+  display: inline-block;
+  width: 100%;
+}
+.bottombottom .belowandcentre {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -261,12 +266,7 @@ li {
   padding-bottom: 5px;
   font-family: Helvetica;
 }
-.bottombottom {
-  padding-top: 0px;
-  display: inline-block;
-  width: 100%;
-}
-.come {
+.bottombottom .come {
   display: block;
   width: 100%;
   height: 50px;
