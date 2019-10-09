@@ -134,6 +134,19 @@ html,
 body {
   height: 100%;
 }
+a {
+  text-decoration: none;
+}
 .hester {
   width: 20%;
+  border: 1px black;
+  border-radius: 100px;
+}
+h1 {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+.flex {
+  width: 100%;
+  display: flex;
 }
