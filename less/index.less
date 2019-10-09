@@ -58,7 +58,7 @@ html, body {
 
 }
 
-@fontStyle: sans-serif; 
+@fontStyle: Helvetica; 
 
 .wholecontainer {
 	width: 100%;
@@ -80,7 +80,7 @@ a {
 
 h1 {
 	font-size: 1.8rem;
-	font-family: sans-serif;
+	font-family: @fontStyle;
 	display: flex;
 	justify-content: flex-end;
 	padding-top: 10px;
@@ -103,6 +103,8 @@ h1 {
 	width: 50%;
 	justify-content: space-around;
 	padding-top: 20px;
+	font-family: @fontStyle;
+
 	
 }
 
@@ -121,4 +123,18 @@ header {
 
 p {
 	font-family: @fontStyle;
+}
+
+.colorbackground p {
+	display: flex;
+	justify-content: flex-end;
+	border: 1px red solid;
+	padding-left: 40px;
+	
+	
+}
+
+.imageandpara {
+	display: flex;
+	align-items: center;
 }

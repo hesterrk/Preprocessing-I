@@ -150,7 +150,7 @@ a {
 }
 h1 {
   font-size: 1.8rem;
-  font-family: sans-serif;
+  font-family: Helvetica;
   display: flex;
   justify-content: flex-end;
   padding-top: 10px;
@@ -169,6 +169,7 @@ h1 {
   width: 50%;
   justify-content: space-around;
   padding-top: 20px;
+  font-family: Helvetica;
 }
 .colorbackground {
   background: lightblue;
@@ -179,5 +180,15 @@ header {
   padding-right: 20px;
 }
 p {
-  font-family: sans-serif;
+  font-family: Helvetica;
+}
+.colorbackground p {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px red solid;
+  padding-left: 40px;
+}
+.imageandpara {
+  display: flex;
+  align-items: center;
 }
