@@ -134,8 +134,12 @@ html,
 body {
   height: 100%;
 }
+.wholecontainer {
+  width: 100%;
+}
 a {
   text-decoration: none;
+  color: black;
 }
 .hester {
   width: 20%;
@@ -147,14 +151,15 @@ h1 {
   font-family: sans-serif;
 }
 .flex {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   border: 1px red solid;
 }
 .navigation {
   display: flex;
-  border: 1px red solid;
+  border: 1px blue solid;
   width: 50%;
   justify-content: space-around;
+  padding-top: 20px;
 }
