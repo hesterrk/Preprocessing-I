@@ -232,7 +232,8 @@ ul {
 .listclass,
 .workhistory {
   padding-left: 20px;
-  border: 1px red solid;
+  border-bottom: 1px black groove;
+  padding-bottom: 20px;
   width: 50%;
 }
 .secondarycontent-container {
@@ -249,4 +250,7 @@ li {
 }
 .secondarycontent-container {
   display: flex;
+}
+.ptag {
+  padding-left: 20px;
 }
