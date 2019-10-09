@@ -147,8 +147,12 @@ a {
   border-radius: 100px;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 .flex {
   width: 100%;
