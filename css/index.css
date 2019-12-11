@@ -1,1 +1,320 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.someMixin {
+  background-color: darkcyan;
+}
+.anotherMixin {
+  color: white;
+}
+.wholecontainer {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Helvetica;
+  background-color: darkcyan;
+  border-radius: 30px;
+  padding: 10px;
+}
+.colorbackground {
+  background: lightblue;
+}
+.colorbackground p {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+header {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header .flex {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .navigation {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  padding-top: 20px;
+  font-family: Helvetica;
+  font-size: 0.8rem;
+}
+@media (max-width: 500px) {
+  header .navigation {
+    display: flex;
+    width: 100%;
+  }
+}
+header h1 {
+  font-size: 1.8rem;
+  font-family: Helvetica;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+header p {
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+.imageandpara {
+  display: flex;
+  align-items: center;
+}
+.imageandpara .hester {
+  width: 30%;
+  border: 1px black;
+  border-radius: 150px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.imageandpara .justhese {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
+}
+.imageandpara #button1 {
+  width: 20%;
+  border-radius: 40px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border: 2px black solid;
+  text-align: center;
+  color: white;
+  background: darkcyan;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .imageandpara #button1 {
+    width: 30%;
+    text-align: center;
+  }
+}
+h2 {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  font-family: Helvetica;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+ul {
+  font-size: 0.9rem;
+  list-style-type: circle;
+  padding-left: 18px;
+  font-family: Helvetica;
+}
+ul li {
+  background: darkcyan;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+}
+.secondarycontent-container {
+  padding-bottom: 20px;
+  display: flex;
+}
+.secondarycontent-container .ptag {
+  padding-left: 20px;
+}
+.secondarycontent-container .listclass,
+.secondarycontent-container .workhistory {
+  padding-left: 20px;
+  border-bottom: 2px black dashed;
+  padding-bottom: 20px;
+  width: 50%;
+  font-family: Helvetica;
+}
+.secondarycontent-container .workhistory {
+  padding-right: 10px;
+}
+.bottombottom {
+  padding-top: 0px;
+  display: inline-block;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .bottombottom {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+}
+.belowandcentre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  padding-bottom: 5px;
+  font-family: Helvetica;
+}
+.come {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding-left: 30px;
+  font-family: Helvetica;
+}
+@media (max-width: 500px) {
+  .come {
+    text-align: center;
+  }
+}
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  background: darkcyan;
+  color: white;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

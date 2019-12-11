@@ -54,6 +54,296 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+
 }
 
+@fontStyle: Helvetica; 
+@headertwoSize: 1.1rem;
+@paragraphFontSize: 0.9rem;
+@blueBackground: darkcyan;
+
+.someMixin {
+	background-color:@blueBackground;
+	
+
+}
+
+.anotherMixin {
+	color: white;
+}
+
+
+.wholecontainer {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-family: @fontStyle; 
+	.someMixin();
+	
+	border-radius: 30px;
+	padding: 10px;
+}
+
+
+
+.colorbackground {
+	background: lightblue;
+
+	p {
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		
+		
+	}
+	
+	
+	
+}
+
+header {
+	padding-left: 20px;
+	padding-right: 20px;
+
+	.flex {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	
+		
+
+	
+	}
+
+	.navigation {
+		display: flex;
+		width: 50%;
+		justify-content: space-around;
+		padding-top: 20px;
+		font-family: @fontStyle;
+		font-size: 0.8rem;
+
+		@media (max-width:500px) {
+			display: flex;
+			width: 100%;
+			
+		
+		
+	}
+	
+		
+	}
+
+
+	h1 {
+		font-size: 1.8rem;
+		font-family: @fontStyle;
+		display: flex;
+		justify-content: flex-end;
+		padding-top: 10px;
+		padding-right: 10px;
+	}
+
+
+
+p {
+	font-family: @fontStyle;
+	font-size: @paragraphFontSize;
+}
+
+}
+
+
+.imageandpara {
+	display: flex;
+	align-items: center;
+
+	.hester {
+		width: 30%;
+		border: 1px black;
+		border-radius:150px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+
+
+	}
+
+	.justhese {
+
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+		flex-wrap: wrap;
+		width: 70%;
+	
+	}
+
+	#button1 {
+		width: 20%;
+		border-radius: 40px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left:10px;
+		border: 2px black solid;
+		text-align: center;
+		color: white;
+		background: @blueBackground;
+		align-items: center;
+
+		@media (max-width:500px) {
+			width: 30%;
+			text-align:center; 
+		}
+	}
+
+		
+		
+
+
+	
+
+}
+
+
+
+
+
+h2 {
+	font-size: @headertwoSize;
+	padding-left: 20px;
+	font-family: @fontStyle;
+	text-decoration: underline;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	
+}
+
+ul {
+	font-size: @paragraphFontSize;
+	list-style-type: circle;
+	padding-left: 18px;
+	font-family: @fontStyle;
+	
+
+	li {
+		background: @blueBackground;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		width: 100%;
+		
+		
+	}
+}
+
+.secondarycontent-container {
+	padding-bottom: 20px;
+	display: flex;
+
+	.ptag {
+		padding-left: 20px;
+	}
+
+	.listclass, .workhistory{
+		padding-left: 20px;
+		border-bottom: 2px black dashed;
+		padding-bottom: 20px;
+		width: 50%;
+		font-family: @fontStyle;
+		
+		
+		
+	
+	}
+
+	.workhistory {
+		padding-right: 10px;
+	
+		
+	
+	}
+	
+}
+
+
+
+
+
+
+
+.bottombottom {
+	padding-top: 0px;
+	display: inline-block;
+	width: 100%;
+
+
+
+	@media (max-width:500px) {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 0px;
+		
+
+		
+	}
+}
+
+.belowandcentre {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	height: 20px;
+	padding-bottom: 5px;
+	font-family: @fontStyle
+
+	
+	
+
+}
+
+.come {
+	display: block;
+	width: 100%;
+	height: 50px;
+	padding-left: 30px;
+	font-family: @fontStyle;
+	
+
+	@media (max-width:500px) {
+		
+		text-align: center;
+		
+	
+	
+}
+
+}
+
+
+footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	background: @blueBackground;
+	.anotherMixin();
+
+
+	
+
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
